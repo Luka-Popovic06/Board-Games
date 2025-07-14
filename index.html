@@ -198,7 +198,109 @@
         </div>
         <button type="button" class="btn-edit">Edit</button>
       </div>
+      <form class="form-box hidden">
+        <div class="form-mini_box">
+          <label class="label" for="name-input">Game Name:</label>
+          <input
+            class="input"
+            type="text"
+            id="name-input"
+            name="name-input"
+            placeholder="Carcassonne"
+            required
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="description-input" class="label">Description:</label>
+          <input
+            class="input"
+            type="text"
+            id="description-input"
+            name="description-input"
+            placeholder="Players take turns drawing and placing tiles to build a medieval landscape filled with"
+            required
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="players-input" class="label">Players:</label>
+          <input
+            type="text"
+            name="players-input"
+            id="players-input"
+            class="input"
+            required
+            placeholder="2-5"
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="complexity-input" class="label">Complexity:</label>
+          <select
+            name="complexity"
+            id="complexity-input"
+            class="select"
+            required
+          >
+            <option value="Chose complexity">Chose complexity...</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-mini_box">
+          <label for="genre-input" class="label">Genre:</label>
+          <input
+            type="text"
+            class="input"
+            id="genre-input"
+            name="genre-input"
+            required
+            placeholder="Tile-laying, Strategy"
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="time-input" class="label">Play Time:</label>
+          <input
+            type="text "
+            class="input"
+            id="time-input"
+            name="time-input"
+            required
+            placeholder="35-45 minutes"
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="rating" class="label">Rating:</label>
+          <select name="rating" id="rating" class="select">
+            <option value="0">Leave rating...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="btn-div">
+          <button type="button" class="add-game_btn">Add Game</button>
+        </div>
+        <svg
+          class="x"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </form>
+      <div class="overlay hidden"></div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
