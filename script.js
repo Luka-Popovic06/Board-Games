@@ -389,4 +389,45 @@ function editMode(game) {
         </div>
       </form>`;
   editFormBox.insertAdjacentHTML('afterbegin', html);
+  const editNameInput = document.querySelector('#name-input-edit');
+  const editDescriptionInput = document.querySelector(
+    '#description-input-edit'
+  );
+  const editPlayersInput = document.querySelector('#players-input-edit');
+  const editComplexitySelect = document.querySelector(
+    '#complexity-select-edit'
+  );
+  const editGenreInput = document.querySelector('#genre-input-edit');
+  const editTimeInput = document.querySelector('#time-input-edit');
+  const editRatingSelect = document.querySelector('#rating-edit');
+  //
+  editNameInput.value = `${game.getName()}`;
+  editDescriptionInput.value = `${game.getDescription()}`;
+  editPlayersInput.value = `${game.getPlayers()}`;
+  editComplexitySelect.value = `${game.getComplexity()}`;
+  editGenreInput.value = `${game.getGenre()}`;
+  editTimeInput.value = `${game.getPlayTime()}`;
+  editRatingSelect.value = `${game.getRating()}`;
+  //
+  editNameInput.addEventListener('input', function (e) {
+    game.setName(e.target.value);
+  });
+  editDescriptionInput.addEventListener('input', function (e) {
+    game.setDescription(e.target.value);
+  });
+  editPlayersInput.addEventListener('input', function (e) {
+    game.setPlayers(e.target.value);
+  });
+  editComplexitySelect.addEventListener('change', function (e) {
+    game.setComplexity(e.target.value);
+  });
+  editGenreInput.addEventListener('input', function (e) {
+    game.setGenre(e.target.value);
+  });
+  editTimeInput.addEventListener('input', function (e) {
+    game.setPlayTime(e.target.value);
+  });
+  editRatingSelect.addEventListener('change', function (e) {
+    game.setRating(e.target.value);
+  });
 }
