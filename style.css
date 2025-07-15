@@ -41,13 +41,13 @@ body {
 /*Main*/
 .game-item-container {
   margin-top: 70px;
-  margin-left: 70px;
-  margin-right: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 70px;
-  column-gap: 70px;
+  margin-left: 119px;
+  margin-right: 119px;
+}
+.content-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
 }
 .game-box {
   background: rgba(20, 20, 20, 0.6);
@@ -56,11 +56,11 @@ body {
   padding: 25px;
   color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+  width: 465px;
+  position: relative;
 }
 /*TITLE STAR BOX*/
 .title-rating-box {
-  display: flex;
-  gap: 340px;
   margin-bottom: 20px;
 }
 /*Edit icones*/
@@ -70,6 +70,11 @@ body {
   height: 20px;
 }
 .star-box {
+  position: absolute;
+  top: 25px;
+  right: 125px;
+}
+.star-mini_box {
   position: relative;
 }
 .empty-star {
@@ -88,18 +93,21 @@ body {
 }
 /*Paragraf*/
 .game-description {
+  overflow-y: scroll;
+  height: 50px;
+  word-wrap: break-word;
   font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 25px;
+  cursor: ns-resize;
 }
 /*Details*/
 .details {
+  margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 25px;
   column-gap: 20px;
-  margin-bottom: 30px;
 }
 .mini-box {
   display: flex;
@@ -113,6 +121,7 @@ body {
 /*BTN*/
 
 .btn-edit {
+  margin-top: 30px;
   background-color: #ff9500;
   color: #ffffff;
   border: none;
@@ -127,9 +136,10 @@ body {
   background-color: #e67e00;
 }
 /*Form*/
+.form-edit,
 .form-box {
   position: relative;
-  background-color: #ffc107; /* jarko žuta */
+  background-color: #ffc107;
   color: black;
   padding: 35px 40px;
   border-radius: 6px;
@@ -172,6 +182,7 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
+.finish-edit,
 .add-game_btn {
   background-color: #00ff88;
   color: #000000;
@@ -183,6 +194,10 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 12px #00ff88;
+}
+.finish-edit:hover {
+  background-color: #00cc6a;
+  box-shadow: 0 0 16px #00ff88, 0 0 8px #00cc6a;
 }
 .add-game_btn:hover {
   background-color: #00cc6a;
