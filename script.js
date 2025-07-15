@@ -301,3 +301,92 @@ function addGame(games) {
     overlay.classList.add('hidden');
   });
 }
+function editMode(game) {
+  editFormBox.innerHTML = '';
+  const html = `<form class="form-edit">
+        <div class="form-mini_box">
+          <label class="label" for="name-input-edit">Game Name:</label>
+          <input
+            class="input"
+            type="text"
+            id="name-input-edit"
+            name="name-input"
+            placeholder="Carcassonne"
+            required
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="description-input-edit" class="label">Description:</label>
+          <input
+            class="input"
+            type="text"
+            id="description-input-edit"
+            name="description-input"
+            placeholder="Players take turns drawing and placing tiles to build a medieval landscape filled with"
+            required
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="players-input-edit" class="label">Players:</label>
+          <input
+            type="text"
+            name="players-input"
+            id="players-input-edit"
+            class="input"
+            required
+            placeholder="2-5"
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="complexity-select-edit" class="label">Complexity:</label>
+          <select
+            name="complexity"
+            id="complexity-select-edit"
+            class="select"
+            required
+          >
+            <option value="Chose complexity">Chose complexity...</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-mini_box">
+          <label for="genre-input-edit" class="label">Genre:</label>
+          <input
+            type="text"
+            class="input"
+            id="genre-input-edit"
+            name="genre-input"
+            required
+            placeholder="Tile-laying, Strategy"
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="time-input-edit" class="label">Play Time:</label>
+          <input
+            type="text "
+            class="input"
+            id="time-input-edit"
+            name="time-input"
+            required
+            placeholder="35-45 minutes"
+          />
+        </div>
+        <div class="form-mini_box">
+          <label for="rating-edit" class="label">Rating:</label>
+          <select name="rating" id="rating-edit" class="select">
+            <option value="0">Leave rating...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="btn-div">
+          <button type="submit" class="finish-edit">Finish edit</button>
+        </div>
+      </form>`;
+  editFormBox.insertAdjacentHTML('afterbegin', html);
+}
