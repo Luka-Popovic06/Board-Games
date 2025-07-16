@@ -1,0 +1,17 @@
+export const domElements = {
+  mainBox: document.querySelector('.game-item-container'),
+  btnNewGame: document.querySelector('.add-btn'),
+  addGameBtn: document.querySelector('.add-game_btn'),
+  contentBox: document.querySelector('.content-box'),
+  editFormBox: document.querySelector('.edit-form_box'),
+  form: document.querySelector('.form-box'),
+  overlay: document.querySelector('.overlay'),
+  iconX: document.querySelector('.x'),
+  gameNameInput: document.querySelector('#name-input'),
+  descriptionInput: document.querySelector('#description-input'),
+  playersInput: document.querySelector('#players-input'),
+  complexitySelect: document.querySelector('#complexity-select'),
+  genreInput: document.querySelector('#genre-input'),
+  timeInput: document.querySelector('#time-input'),
+  ratingSelect: document.querySelector('#rating'),
+};
