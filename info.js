@@ -8,6 +8,7 @@ export const info = [
     genre: 'Strategy, Trading',
     playTime: '60-90',
     rating: 4,
+    id: crypto.randomUUID(),
   },
   {
     name: 'Dixit',
@@ -17,7 +18,8 @@ export const info = [
     complexity: 'Easy',
     genre: 'Party, Creative',
     playTime: '30 ',
-    rating: 0,
+    rating: 1,
+    id: crypto.randomUUID(),
   },
   {
     name: 'Azul',
@@ -28,6 +30,7 @@ export const info = [
     genre: 'Abstract, Strategy',
     playTime: '30-45',
     rating: 3,
+    id: crypto.randomUUID(),
   },
   {
     name: 'Ticket to Ride',
@@ -38,6 +41,7 @@ export const info = [
     genre: 'Strategy, Family',
     playTime: '45-60',
     rating: 1,
+    id: crypto.randomUUID(),
   },
   {
     name: 'Codenames',
@@ -48,5 +52,6 @@ export const info = [
     genre: 'Strategy, Family',
     playTime: '15-30',
     rating: 2,
+    id: crypto.randomUUID(),
   },
 ];
